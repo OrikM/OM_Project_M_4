@@ -36,7 +36,7 @@ a {
   letter-spacing: 0.06em;
   text-decoration: none;
   padding: 5px;
-  margin: 0 15px 0 0;
+  margin: 0 -34px 0 0;
 }
 
 a.a {
@@ -71,8 +71,10 @@ a:hover {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   width: 50%;
-  margin: auto;
+  margin: auto
 }
 
 h1 {
@@ -107,9 +109,6 @@ p {
 
 .select-currency {
   display: flex;
-  justify-content: space-between;
-  border: 1px solid #e5e5e5;
-  box-sizing: border-box;
   border-radius: 3px;
 }
 
@@ -129,6 +128,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.select-currency .currency-select:first-child {
+  border-radius: 3px 0 0 3px;
 }
 
 .active-insert {

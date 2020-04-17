@@ -12,7 +12,7 @@ const selectableCurrencySymbolsLeftSide = document.querySelector(
   ".first-block-convert select"
 );
 
-const constantCurrencySymbolsRightSide = document.querySelectorAll(
+const constCurrencySymbolsRightSide = document.querySelectorAll(
   ".second-block-convert .select-currency span"
 );
 const selectableCurrencySymbolsRightSide = document.querySelector(
@@ -58,7 +58,7 @@ function changeLeftSideSelectSymbols() {
 
 // change background color of currency indicator on output side on event "click"
 // find the selected currency
-constantCurrencySymbolsRightSide.forEach((event) => {
+constCurrencySymbolsRightSide.forEach((event) => {
   event.addEventListener("click", changeRightSideConstSymbols);
 });
 selectableCurrencySymbolsRightSide.addEventListener("click", changeRightSideSelectSymbols);
@@ -66,7 +66,7 @@ selectableCurrencySymbolsRightSide.addEventListener("click", changeRightSideSele
 //to currency (not selected)
 //makes changes in classList of the elements. constant output side Currency Symbols
 function changeRightSideConstSymbols(e) {
-  constantCurrencySymbolsRightSide.forEach((element) => {
+  constCurrencySymbolsRightSide.forEach((element) => {
     element.classList.remove("active-get");
   });
   e.target.classList.add("active-get");
@@ -76,7 +76,7 @@ function changeRightSideConstSymbols(e) {
 //to currency
 //makes changes in classList of the elements. selectable output side currency symbols
 function changeRightSideSelectSymbols() {
-  constantCurrencySymbolsRightSide.forEach((element) => {
+  constCurrencySymbolsRightSide.forEach((element) => {
     element.classList.remove("active-get");
   });
   updateAmount();
@@ -117,7 +117,7 @@ input.addEventListener("keyup", (e) => {
   timeout = setTimeout(function (e) {
     leftInputAmount = 1;
     updateAmount();
-  }, 2000);
+  }, 1000);
 });
 
 // Listen for keystroke events
@@ -131,7 +131,7 @@ output.addEventListener("keyup", (e) => {
   timeout = setTimeout(function () {
     leftInputAmount = 2;
     updateAmount();
-  }, 2000);
+  }, 1000);
 });
 
 //=============================================================================================================
@@ -206,7 +206,7 @@ function swapActive() {
     }
   });
 
-  constantCurrencySymbolsRightSide.forEach((element, i) => {
+  constCurrencySymbolsRightSide.forEach((element, i) => {
     if (element.classList.contains("active-get")) {
       getSelectIsSet = false;// if tab selected, then <select></select> is not selected.
       get = i;
@@ -221,7 +221,7 @@ function swapActive() {
     }
   });
 
-  constantCurrencySymbolsRightSide.forEach((element, i) => {
+  constCurrencySymbolsRightSide.forEach((element, i) => {
     if (i == insert) {
       element.classList.add("active-get");
       currencyRightSide = element.value;
