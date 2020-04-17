@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Real Time Currency Converter</title>
+        <link href="./style.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav id="nav-head" class="main-nav">
+                <img class="bank" src="./images/Asset 1@3x 1.png"/>
+                <a class="button-bank" href="#">БАНК</a>  
+                <a class="button-business a" href="#">БИЗНЕС</a>  
+                <a class="button-invest a" href="#">ИНВЕСТИЦИИ</a>  
+                <a class="button-insure a" href="#">СТРАХОВАНИЕ</a>  
+                <a class="button-mob a" href="#">МОБАЙЛ</a>  
+                <a class="button-travel a" href="#">ПУТЕШЕСТВИЯ</a>  
+                <a class="button-entertain a" href="#">РАЗВЛЕЧЕНИЯ</a> 
+            </nav>
+            <button type="submit" class="enter-button">ВОЙТИ</button>
+        </header>
+        <main>
+            <h1 class="header">Конвертер валют онлайн</h1>
+            <div class="main-container">
+                <div class="first-block-convert">
+                    <p class="text-info">У меня есть</p>
+                    <div class="select-currency">
+                        <span id="ru" class="currency-select active-insert" value="RUB">RUB</span>
+                        <span id="us" class="currency-select" value="USD">USD</span>
+                        <span id="eu" class="currency-select" value="EUR">EUR</span>
+                        <span id="gb" class="currency-select" value="GBP" style="border-right: 0;">GBP</span>
+                        <select>
+                            <option value="CHF">CHF </option>
+                            <option value="NOK">NOK</option>
+                            <option value="CAD">CAD</option>
+                            <option value="MXN">MXN</option>
+                            <option value="CNY">CNY</option>
+                            <option value="ISK">ISK</option>
+                            <option value="KRW">KRW</option>
+                            <option value="HKD">HKD</option>
+                            <option value="CZK">CZK</option>
+                            <option value="BGN">BGN</option>
+                            <option value="BRL">BRL</option>
+                            <option value="IDR">IDR</option>
+                            <option value="SGD">SGD</option>
+                            <option value="PHP">PHP</option>
+                            <option value="RON">RON</option>
+                            <option value="HUF">HUF</option>
+                            <option value="ILS">ILS</option>
+                            <option value="THB">THB</option>
+                            <option value="SEK">SEK</option>
+                            <option value="NZD">NZD</option>
+                            <option value="AUD">AUD</option>
+                            <option value="DKK">DKK</option>
+                            <option value="HRK">HRK</option>
+                            <option value="PLN">PLN</option>
+                            <option value="TRY">TRY</option>
+                            <option value="INR">INR</option>
+                            <option value="MYR">MYR</option>
+                            <option value="ZAR">ZAR</option>
+                            <option value="JPY">JPY</option>
+                        </select>
+                    </div>
+                    <div class="insert-to-converter">
+                        <input id="add-number-to-convert" type="number" value=1>
+                        <div class="i-text convert-first">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swap"><img src="./images/swap.png" alt="swap sign"></div>
+                <div class="second-block-convert">
+                    <p class="text-get">Хочу приобрести</p>
+                    <div class="select-currency">
+                        <span id="ru" class="currency-select" value="RUB">RUB</span>
+                        <span id="us" class="currency-select active-get" value="USD">USD</span>
+                        <span id="eu" class="currency-select" value="EUR">EUR</span>
+                        <span id="gb" class="currency-select" value="GBP" style="border-right: 0;">GBP</span>
+                        <select>
+                            <option value="CHF">CHF</option>
+                            <option value="NOK">NOK</option>
+                            <option value="CAD">CAD</option>
+                            <option value="MXN">MXN</option>
+                            <option value="CNY">CNY</option>
+                            <option value="ISK">ISK</option>
+                            <option value="KRW">KRW</option>
+                            <option value="HKD">HKD</option>
+                            <option value="CZK">CZK</option>
+                            <option value="BGN">BGN</option>
+                            <option value="BRL">BRL</option>
+                            <option value="IDR">IDR</option>
+                            <option value="SGD">SGD</option>
+                            <option value="PHP">PHP</option>
+                            <option value="RON">RON</option>
+                            <option value="HUF">HUF</option>
+                            <option value="ILS">ILS</option>
+                            <option value="THB">THB</option>
+                            <option value="SEK">SEK</option>
+                            <option value="NZD">NZD</option>
+                            <option value="AUD">AUD</option>
+                            <option value="DKK">DKK</option>
+                            <option value="HRK">HRK</option>
+                            <option value="PLN">PLN</option>
+                            <option value="TRY">TRY</option>
+                            <option value="INR">INR</option>
+                            <option value="MYR">MYR</option>
+                            <option value="ZAR">ZAR</option>
+                            <option value="JPY">JPY</option>
+                        </select>
+                    </div>
+                    <div class="insert-to-converter">
+                        <input id="get-converted-number" type="number" >
+                        <div class="i-text convert-sec">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="loading-alert"> 
+            <div class="loading">Loading</div>
+        </div>
+        <script src="./dist/main.minified.js"></script>
+    </body>
+</html>
